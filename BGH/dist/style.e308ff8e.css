@@ -1,0 +1,24 @@
+*{margin:0; padding:0}
+.main-header
+{
+    position: fixed; 
+    width:100%;
+}
+.header-wrap
+{
+    border-bottom: 1px solid #fff;
+    width : 1290px;
+    height : 80px;
+}
+.header-wrap>h1>a
+{
+    background-image: url('bi1_on.d47a4e94.png');
+    width: 70px;
+    height: 20px;
+}
+.header-wrap>nav>a
+{
+    color:#fff;
+    padding:10px;
+
+}

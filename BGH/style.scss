@@ -1,0 +1,310 @@
+@font-face { 
+    font-family: 'NanumBarunGothic';
+    src: url('/fonts/NanumBarunGothic/NanumBarunGothic.eot');
+    src: url('/fonts/NanumBarunGothic/NanumBarunGothic.eot') format('embedded-opentype'),
+    url('/fonts/NanumBarunGothic/NanumBarunGothic.woff') format('woff');
+} 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+*{margin:0; padding:0}
+html
+{ 
+    font-family:  'NanumBarunGothic','Noto Sans KR', 'serif';
+}
+ul
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+}
+#section0
+{
+    background: url('./img/main_v01.jpg') no-repeat 50% 0%;
+    background-size: cover;
+}
+#section1
+{
+    background: url('./img/main_v02.jpg') no-repeat 50% 0%;
+    background-size: cover;
+}
+.main-header
+{
+    position: fixed; 
+    width:100%;
+    z-index: 9999;
+} 
+.header-wrap
+{
+    width : 1280px;
+    height : 80px;
+    margin-left:auto;
+    margin-right:auto; 
+    position: relative;
+    h1 
+    {
+        float: left;
+        margin-top: 28px;
+        a
+        {
+            background-image: url('img/bgf_logo_70.png');
+            width: 70px;
+            height: 25px;
+            display: inline-block; 
+        }
+    } 
+    nav
+    {
+        float: left;
+        margin-left:204px; 
+        a
+        {
+            color:#fff;
+            padding: 0 20px; 
+            margin-left: 40px;
+            display: inline-block;
+            line-height: 79px;
+            width: auto;
+            height: 79px;
+            vertical-align: middle;
+            text-align:center;
+            box-sizing:border-box;
+        }
+        a:first-child
+        {
+            margin-left:0px;
+        }
+        a:last-child
+        {
+            padding:0 35px;
+        }
+    } 
+} 
+
+.top-select
+{  
+    position: absolute;
+    right:0;
+    top:25px;
+    select
+    {
+        background: url('img/icon_arrow_down.png') no-repeat 85% 50%;
+        appearance: none;
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+        cursor: pointer;
+        vertical-align: middle;  
+        width:100%;
+    }
+    .group-all
+    {
+        float: left;
+        width:135px;
+        height:30px;
+        margin-right:10px;
+    }
+    .sel
+    {
+        float: left;
+        width:65px;
+        height:30px;
+        margin-right:10px;
+    }
+    #FamilySites, #lang
+    { 
+        height:30px; 
+        color: #ccc;
+        padding-left: 10px;
+        border : 1px solid rgba(255,255, 255, 0.3);
+    }
+}
+.sub-nav
+{
+    width:100%;
+    height: 250px;
+    background-color: rgba($color: #000, $alpha: 0.3);
+    position: absolute;
+    top: 80px;
+    left:0;
+    display: none;
+    
+    .sub-nav-wrap
+    { 
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        .sub-li > li
+        {
+            float: left;
+            //display: inline-block;
+        }
+        .sub-li
+        {
+           margin-left:238px; 
+           margin-top:18px;
+           li
+           {
+               ul
+               { 
+                   li
+                   { 
+                        line-height: 29px;
+                        text-align: center;
+                        a
+                        {  
+                            color: #fff;
+                            text-align: center; 
+                        }
+                        a:hover
+                        {
+                            color: #39b54a;
+                        }    
+                   }
+               }
+           }
+        }
+        .sub-li > li
+        {
+            width: 141px;
+            display: inline-block;
+            font-size: 14px; 
+        }
+        .sub-li > li:nth-child(1)
+        {
+            margin-right:20px;
+        }
+        .sub-li >   li:nth-child(2)
+        {
+            margin-right:30px;
+        }
+        .sub-li >  li:nth-child(3)
+        {
+            margin-right:5px;
+        }
+    }
+}
+.progress-bar
+{
+    width:100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.3);
+    position: fixed;
+    top:80px;
+    z-index:10;
+}
+.intro_wrap
+{
+    width: 100%; 
+    height:961px;
+    padding-top: 256px;
+    text-align: center; 
+    box-sizing: border-box;
+    .intro
+    {
+        opacity:0;
+        margin-top:80px;
+    }
+    .img-bi
+    {
+        text-align: center;
+        img
+        {
+            vertical-align: middle;
+        }
+    }
+    .txt-des
+    {
+        h2
+        {
+            color:#fff;
+            font-size: 47px; 
+            font-weight: 100;
+            letter-spacing: -2px;
+            padding-top: 5px;
+            strong
+            {
+                font-weight: 700;
+            }
+        }
+    }
+    .txt-service
+    {
+        margin-top: 145px; 
+        display: inline-block;
+        ul
+        {
+            li
+            {
+                margin: 0 45px;
+                float: left; 
+                a
+                {
+                    color:#fff;
+                    .ico
+                    {
+                        background-color: rgba($color: #000000, $alpha: .6);
+                        width:110px;
+                        height:110px;
+                        border-radius: 100%;
+                        display: table;
+                        vertical-align: middle; 
+                        text-align: center;
+                        margin-bottom: 10px;
+                        em
+                        {
+                            img
+                            {
+                                margin-top: 45px;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+.lst-pagenav
+{
+    position: fixed;
+    bottom: 100px;
+    width:100%;
+    
+    ul
+    {
+        text-align: center;
+        li
+        {
+            padding: 0 20px;
+            display: inline-block; 
+            background: url('/img/vline.png') no-repeat 0% 50%;
+            span.bi-on
+            {
+                display:none;
+            }
+            &.active, &:hover { 
+                span.bi-on {
+                    display:inline-block; 
+                }
+                span.bi-normal {
+                    display:none; 
+                }
+            }
+            &:first-child
+            {
+                background: none;
+            }
+        }
+    }
+}
+.ico-mouse
+{
+    bottom:20px;
+    position: fixed;
+    left: 50%;
+    width:30px;
+    height:60px;
+}
+.open
+{
+    display: inline-block;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li.active span.bi-on, li:hover span.bi-on{     
+                display:inline-block; 
+        }               
+        
+        li.active span.bi-normal {
+                display:none;             
+        }
+    </style>
+    <script>
+        $( document ).ready(function () {
+
+            for (let index = 0; index < 8; index++) {
+                $('.lst-pagenav ul li:nth('+index+') span.bi-on').css('display', 'none');
+                $('.lst-pagenav ul li:nth('+index+') span.bi-on').on('click', function (){
+                    $('.lst-pagenav ul li:nth('+index+') span.bi-normal').css('display', 'none');
+                    $(this).css('display','block');
+                });
+            }
+        });
+
+    </script>
+</head>
+<body>
+        <div class="lst-pagenav">
+                <ul>
+                    <li data-menuanchor="anchor1">
+                        <a href="#anchor1" >
+                            <span class="bi-normal">
+                                <img alt="BGF" src="/img/bi1.png">
+                            </span>
+                            <span class="bi-on">
+                                    <img alt="BGF" src="/img/bi1_on.png">
+                            </span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="anchor2">
+                        <a href="#anchor2" >
+                            <span class="bi-normal">
+                                <img alt="BGF" src="/img/bi1.png">
+                            </span>
+                            <span class="bi-on">
+                                    <img alt="BGF" src="/img/bi1_on.png">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            <span class="bi-normal">
+                                <img alt="BGF" src="/img/bi1.png">
+                            </span>
+                            <span class="bi-on">
+                                    <img alt="BGF" src="/img/bi1_on.png">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            <span class="bi-normal">
+                                <img alt="BGF" src="/img/bi1.png">
+                            </span>
+                            <span class="bi-on">
+                                    <img alt="BGF" src="/img/bi1_on.png">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            <span class="bi-normal">
+                                <img alt="BGF" src="/img/bi1.png">
+                            </span>
+                            <span class="bi-on">
+                                    <img alt="BGF" src="/img/bi1_on.png">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            <span class="bi-normal">
+                                <img alt="BGF" src="/img/bi1.png">
+                            </span>
+                            <span class="bi-on">
+                                    <img alt="BGF" src="/img/bi1_on.png">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            <span class="bi-normal">
+                                <img alt="BGF" src="/img/bi1.png">
+                            </span>
+                            <span class="bi-on">
+                                    <img alt="BGF" src="/img/bi1_on.png">
+                            </span>
+                        </a>
+                    </li>
+</body>
+</html>

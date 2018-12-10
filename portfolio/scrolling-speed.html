@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Scrolling speed - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage demo scrolling speed." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scrolling,speed,scrollingSpeed" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">about</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">skills</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">work</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">contact</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>You Jina's portfolio</h1>
+		<p>welcome to my portfolio site!</p>
+        <img src="imgs/fullPage.png" alt="profillePicture" class="profile"/>
+        <p>경력 : 위즈웨어 6년</p>
+        <p>자격증 : 정보처리 기사</p>
+        <p>학력 : 유한대학교 컴퓨터공학</p> 
+    </div>
+	<div class="section" id="section1">
+	    <div class="slide">
+			<div class="intro">
+				<img src="imgs/1.png" alt="Cool" />
+				<h1>My skills</h1>
+                <p>It's Web Publishing and frontend :)</p>
+                <h1>Publishing </h1>
+                    <p>html5,css3,javascript,jquery</p> 
+			</div>
+		</div>
+	    <div class="slide">
+			<div class="intro">
+				<img src="imgs/2.png" alt="Compatible" />
+                <h1>frontend</h1>
+                <p>node,veu</p> 
+                <h1>tools</h1>
+                <p>github, bootstrap, firebase, trello, mongodb</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>side projects</h1>
+			<p></p>
+		</div>
+    </div>
+    <div class="section" id="section3">
+		<div class="intro">
+			<h1>contact</h1>
+			<p>010. 3464. 8755.</p>
+			<p>dbwlsk870@gmail.com</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="./dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+        scrollingSpeed: 700,
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+    });
+</script>
+
+</body>
+</html>
