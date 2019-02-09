@@ -1,0 +1,13 @@
+http://youji.com/res/index.css
+
+res
+  index.css
+
+WEB-INF
+  resources
+    index.css
+
+<resource path="res/**" location="/WEB-INF/resources/**" />
+
+@WebConrtoller("/test")
+method(httpReq, http)

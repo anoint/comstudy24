@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *
+        {
+            font-size: 15px;
+        }
+        body
+        {
+            margin: 0;
+        }
+        header
+        {
+            background: #0D4795;
+            opacity: 0.9;
+            position:fixed;
+            width: 100%;
+            height: 80px;
+            box-sizing: border-box;
+        }
+        .head-wrap
+        {
+            max-width: 1200px;
+            min-width: 980px;
+            margin:0 auto;
+        }
+        .logo-wrap
+        {
+            padding: 0 30px;
+            width: 250px;
+            height: 80px;
+            line-height: 80px;
+            float: left;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            margin:0;
+        }
+        a
+        {
+           text-decoration: none;
+           color:#000; 
+        }
+        nav
+        {
+            min-width: 730px;
+            display: block;
+            margin: 0 auto;
+            float: right;
+            
+        }
+        nav>ul>li
+        {
+            float: left;
+            position: relative;
+        }
+        nav>ul>li>a
+        {
+            position: relative;
+            padding: 0 30px;
+            display: inline-block;
+            background-color: #0D4795;
+            color: #fff;
+            font-size:  1em;
+            font-weight: bold;
+            height : 80px;
+            line-height: 80px;
+            z-index: 2;
+        }
+        nav>ul>li>a>i
+        {
+            padding-left: 5px;
+        }
+        .sub-menu
+        {
+            background-color:#0D4795;
+            display: inline-block;
+            position: absolute;
+            border-radius: 4px;
+            transition : all .25s ease-out;
+            transform: translateY(-100%);
+            z-index:1;
+        }
+        .sub-menu>ul>li
+        {
+            width: 115px;
+            text-align: center;
+        }
+        .sub-menu>ul>li>a
+        {
+            display: inline-block;
+            color:#fff;
+            font-size: 1em;
+            font-size: 0.8em;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 20px;
+            font-weight: 600;
+        }
+        .sub-menu>ul>li>a:hover, .sub-menu>ul>li:hover
+        /* .menu-hover */
+        {
+            background: rgba(50,50,50,0.97);
+            border-radius: 4px;
+        }
+        nav>ul>li:hover>.sub-menu
+        /* .submenu-hover */
+        {
+            transform: translateY(0);
+        }
+        .link-wrap
+        {
+            display: inline-block;
+            position: relative;
+            line-height: 80px;
+            height: 80px;
+        }
+        select
+        {
+            color: #fff;
+            background: #0D4795;
+            border:1.5px solid #fff;
+            border-radius: 3px;
+            padding: 5px;
+            font-size: 0.8em;
+            width: 70px;
+        }
+        .btn-blog
+        {
+            display: inline;
+        }
+        img
+        {
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<script>
+    $("nav>ul>li>a").on("click", function() {
+        $(".sub-menu>ul>li>a").addClass("menu-hover");
+        $("nav>ul>li>.sub-menu").addClass("submenu-hover");
+        
+    });
+</script>
+<body>
+    <header>
+        <div class="head-wrap">
+            <div class="logo-wrap">
+                <a href="#">
+                    <img src="./img/logo.png" alt>
+                </a>
+            </div>
+   
+                <nav>
+                <ul>
+                    <li><a href="#">menu1<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">sub-menu</a></li>
+                                <li><a href="#">sub-menu</a></li>
+                                <li><a href="#">sub-menu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">menu2<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">sub-menu</a></li>
+                                <li><a href="#">sub-menu</a></li>
+                                <li><a href="#">sub-menu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">menu3<i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">sub-menu</a></li>
+                                <li><a href="#">sub-menu</a></li>
+                                <li><a href="#">sub-menu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="link-wrap">
+                        <div class="select-wrap">
+                            <select name="s1" id="s1">
+                                <option value="ko">korea</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="link-wrap">                    
+                        <div class="btn-bolg">
+                            <img src="./img/naverBlog.png" alt>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
